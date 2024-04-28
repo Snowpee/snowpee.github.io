@@ -1233,7 +1233,7 @@ textarea::selection {
 	border-right: 			1px solid var(--cl-athensgray);
 	border-bottom: 			1px solid var(--cl-athensgray);
 	border-left: 			1px solid var(--cl-athensgray);
-	border-radius: 			5px;
+	border-radius: 			10px;
 	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -1291,7 +1291,10 @@ textarea::selection {
 	border-left: 			transparent;
 	color: 					var(--cl-wildsand);
 }
-
+#custom-context-menu .menu-links-wrapper {
+	border: 0 none;
+    box-shadow: 0 0 3px rgb(0 0 0 / 10%);
+}
 .datepicker th.prev.available:hover, .datepicker th.next.available:hover {
 	background-color: 		var(--cl-seashell);
 	color: 					var(--cl-black);
@@ -1339,7 +1342,7 @@ textarea::selection {
 	border-right: 			1px solid var(--cl-athensgray);
 	border-bottom: 			1px solid var(--cl-athensgray);
 	border-left: 			1px solid var(--cl-athensgray);
-	border-radius: 			5px;
+	border-radius: 			10px;
 	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -3757,8 +3760,8 @@ a {
 
 /* Fix Dropdown Wrapper inner margin */
 .dropdown-wrapper > div {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
+  box-shadow: 0 0 3px rgb(0 0 0 / 10%);
 }
 
 /* Fix margins for favorite and recent items */
