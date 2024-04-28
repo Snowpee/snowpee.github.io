@@ -4047,5 +4047,9 @@ a.menu-link {
         background: hsl(231 9% 97% / 1);
     }
 }
-
-    
+@media (max-width: 639px){
+	#main-container.is-left-sidebar-open {
+		margin-left: unset;
+		padding-left: unset;
+	}
+}
