@@ -3957,7 +3957,8 @@ i.ti {
 
 /* Reduce border radius for ui panels */
 .ui__modal-panel {
-	border-radius: 5px;
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
 }
 
 /* Set checked color to white */
