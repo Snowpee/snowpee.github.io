@@ -351,6 +351,7 @@ html[data-theme=dark] {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
+	padding: 1em;
 }
 .dark-theme .block-properties,  html[data-theme=dark] .block-properties {
 	background-color: 		var(--cl-darkjungle);
@@ -981,6 +982,9 @@ div[data-refs-self*='"card"'] {
 .page-ref {
 	border-bottom: 			3px solid var(--cl-botticelli);
 	color: 					var(--cl-yaleblue);
+}
+.block-properties .page-ref {
+	border-bottom: 0 none;
 }
 .dark-theme .page-ref,  html[data-theme=dark] .page-ref {
 	border-bottom: 			3px solid var(--cl-jellybean);
