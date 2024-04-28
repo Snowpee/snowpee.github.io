@@ -3908,6 +3908,9 @@ body, textarea {
 #left-sidebar .nav-content-item div.header a {
     color: var(--cl-aluminium);
 }
+.left-sidebar-inner .nav-content-item .bd ul {
+	margin-left: 20px;
+}
 .left-sidebar-inner .nav-content-item .bd ul a {
   width: unset;
 }
