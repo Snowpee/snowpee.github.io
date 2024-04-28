@@ -351,7 +351,7 @@ html[data-theme=dark] {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	padding: 1em;
+	padding: .5em 1em;
 }
 .dark-theme .block-properties,  html[data-theme=dark] .block-properties {
 	background-color: 		var(--cl-darkjungle);
