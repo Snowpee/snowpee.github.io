@@ -4049,7 +4049,7 @@ a.menu-link {
 }
 @media (max-width: 639px){
 	#main-container.is-left-sidebar-open {
-		margin-left: unset;
+		margin-left: unset !important;
 		padding-left: unset;
 	}
 }
