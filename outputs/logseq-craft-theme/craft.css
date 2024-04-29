@@ -4028,7 +4028,7 @@ button {
     }
     #app-container {
         background-color:hsl(240, 2%, 94%);
-		background-image: linear-gradient(hsl(240, 2%, 94%), hsl(282, 10%, 93%));
+		background-image: linear-gradient(hsl(220deg 60% 98%), hsl(246 25% 96% / 1));
     }
     
     a.tag {
