@@ -4024,10 +4024,11 @@ button {
           border-radius: 7px;
     }
     #left-sidebar .left-sidebar-inner {
-        background-color: hsl(240, 2%, 94%) !important;
+        background-color: transparent !important;
     }
     #app-container {
-        background-color:hsl(240, 2%, 94%);;
+        background-color:hsl(240, 2%, 94%);
+		background-image: linear-gradient(hsl(240, 2%, 94%), hsl(282, 10%, 93%));
     }
     
     a.tag {
