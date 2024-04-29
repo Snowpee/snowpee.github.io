@@ -3079,11 +3079,8 @@ a svg {
 
 .ui__modal-panel .panel-content {
 	background-color: 		var(--cl-alabaster)!important;
-	border-top: 			1px solid var(--cl-athensgray);
-	border-right: 			1px solid var(--cl-athensgray);
-	border-bottom: 			1px solid var(--cl-athensgray);
-	border-left: 			1px solid var(--cl-athensgray);
 	border-radius: 			5px;
+	border: 0 none;
 }
 .dark-theme .ui__modal-panel .panel-content,  html[data-theme=dark] .ui__modal-panel .panel-content {
 	background-color: 		var(--cl-darkjungle)!important;
@@ -3215,12 +3212,8 @@ a svg {
 }
 
 .cp__settings-inner .panel-wrap {
-	background-color: 		var(--cl-white);
-	border-top: 			1px solid var(--cl-seashell);
-	border-right: 			1px solid var(--cl-seashell);
-	border-bottom: 			1px solid var(--cl-seashell);
-	border-left: 			1px solid var(--cl-seashell);
-	border-radius: 			5px;
+	background-color: unset;
+	border: 0 none;
 }
 .dark-theme .cp__settings-inner .panel-wrap,  html[data-theme=dark] .cp__settings-inner .panel-wrap {
 	background-color: 		var(--cl-fadedblack);
@@ -3988,7 +3981,9 @@ a.menu-link {
 }
 
 /* 自定义部分 */
-
+button {
+	border: 0 none !important;
+}
 @media (min-width: 640px) {
     .page-title-sizer-wrapper>.editing > input{
         font-size: 1.2rem;
