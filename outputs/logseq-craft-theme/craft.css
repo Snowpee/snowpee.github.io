@@ -3913,6 +3913,13 @@ body, textarea {
 }
 .left-sidebar-inner .nav-content-item .bd ul a {
   width: unset;
+  transition: all .05s ease-in-out !important;
+  padding: .25em 24px;
+  border-radius: 5px;
+}
+.left-sidebar-inner .nav-content-item .bd ul a:hover,
+#left-sidebar .nav-header > div a:hover {
+    background-color: rgb(255 255 255 / 50%) !important;
 }
 .left-sidebar-inner .nav-content-item .header .wrap-th>strong {
     font-size: unset;
@@ -4028,7 +4035,7 @@ button {
     }
     #app-container {
         background-color:hsl(240, 2%, 94%);
-		background-image: linear-gradient(hsl(220deg 60% 98%), hsl(246 25% 96% / 1));
+		background-image: linear-gradient(hsl(220deg 60% 93%), hsl(246 25% 94% / 1));
     }
     
     a.tag {
