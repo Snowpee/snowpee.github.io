@@ -728,6 +728,33 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-monsoon);
 }
 
+.extensions__pdf-header {
+	right: 0;
+    top: 0;
+    width: 100%;
+    background: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(20px);
+}
+.pdfViewer {
+	padding-top: 52px;
+}
+
+body.is-pdf-active #app-container {
+	padding-left: calc(var(--ph-view-container-width));
+}
+
+body.is-pdf-active #head>.l {
+    padding-left: 10px;
+    padding-top: 7px;
+}
+body.is-pdf-active #head>.l .flex, 
+body.is-pdf-active #head>.l > .icon {
+	background-color: white;
+    border-radius: 6px 0 0 6px;
+}
+body.is-pdf-active #head>.l > .icon {
+    border-radius: 0 6px 6px 0;
+}
 *:is(#main-content-container, #right-sidebar) {
 	background-color: 		var(--cl-white);
 	color: 					var(--cl-black);
