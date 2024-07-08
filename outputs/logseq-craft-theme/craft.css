@@ -4034,7 +4034,7 @@ button {
     
     #main-container {
         padding: 5px;
-        margin: -43px 0 1px 5px;
+        margin: -47px 0 1px 5px;
     }
     
     #main-content-container {
@@ -4076,10 +4076,6 @@ button {
     .references-blocks-item {
         background: hsl(231 9% 97% / 1);
     }
-	#main-content-container {
-		top: var(--awUi-header-height)!important;
-		height: calc(100vh - var(--awUi-header-height) - 32px)!important;
-	}
 }
 @media (max-width: 639px){
 	#main-container.is-left-sidebar-open {
