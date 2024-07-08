@@ -4076,6 +4076,10 @@ button {
     .references-blocks-item {
         background: hsl(231 9% 97% / 1);
     }
+	#main-content-container {
+		top: var(--awUi-header-height)!important;
+		height: calc(100vh - var(--awUi-header-height) - 32px)!important;
+	}
 }
 @media (max-width: 639px){
 	#main-container.is-left-sidebar-open {
