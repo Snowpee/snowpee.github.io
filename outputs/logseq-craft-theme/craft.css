@@ -1260,13 +1260,13 @@ textarea::selection {
 
 #custom-context-menu {
 	background-color: 		var(--cl-whitesmoke);
-	border-top: 			1px solid var(--cl-athensgray);
-	border-right: 			1px solid var(--cl-athensgray);
-	border-bottom: 			1px solid var(--cl-athensgray);
-	border-left: 			1px solid var(--cl-athensgray);
+	border-top: 			0 none;
+	border-right: 			0 none;
+	border-bottom: 			0 none;
+	border-left: 			0 none;
 	border-radius: 			10px;
-	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
-	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	box-shadow: 			0 0 0 1px rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--webkit-box-shadow: 	0 0 0 1px rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .dark-theme #custom-context-menu,  html[data-theme=dark] #custom-context-menu {
 	background-color: 		var(--cl-darkjungle);
@@ -1369,13 +1369,13 @@ textarea::selection {
 
 *:is(#left-sidebar, #app-container) .dropdown-wrapper {
 	background-color: 		var(--cl-whitesmoke);
-	border-top: 			1px solid var(--cl-athensgray);
-	border-right: 			1px solid var(--cl-athensgray);
-	border-bottom: 			1px solid var(--cl-athensgray);
-	border-left: 			1px solid var(--cl-athensgray);
+	border-top: 			0 none;
+	border-right: 			0 none;
+	border-bottom: 			0 none;
+	border-left: 			0 none;
 	border-radius: 			10px;
-	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
-	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	box-shadow: 			0 0 0 1px rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--webkit-box-shadow: 	0 0 0 1px rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .dark-theme *:is(*:is(#left-sidebar, #app-container) .dropdown-wrapper), html[data-theme=dark] *:is(*:is(#left-sidebar, #app-container) .dropdown-wrapper) {
 	background-color: 		var(--cl-darkjungle);
@@ -3416,14 +3416,14 @@ a svg {
 }
 
 .tippy-tooltip {
-	background-color: 		var(--cl-white);
-	border-top: 			1px solid var(--cl-platinum);
-	border-right: 			1px solid var(--cl-platinum);
-	border-bottom: 			1px solid var(--cl-platinum);
-	border-left: 			1px solid var(--cl-platinum);
-	border-radius: 			5px;
-	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
-	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	background-color: 		white;
+	border-top: 			0;
+	border-right: 			0;
+	border-bottom: 			0;
+	border-left: 			0;
+	border-radius: 			6px;
+	box-shadow: 			0 0 0 1px rgb(0 0 0 / 5%), 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--webkit-box-shadow: 	0 0 0 1px rgb(0 0 0 / 5%), 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .dark-theme .tippy-tooltip,  html[data-theme=dark] .tippy-tooltip {
 	background-color: 		var(--cl-fadedblack);
@@ -4076,6 +4076,13 @@ button {
     .references-blocks-item {
         background: hsl(231 9% 97% / 1);
     }
+	.left-sidebar-inner a.item.active, .left-sidebar-inner a.item:hover {
+		background-color: rgb(255 255 255 / 0.6);
+	}
+	html .ui__context-menu-content, html .ui__dropdown-menu-content, html .ui__select-content {
+		box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 8px 16px rgb(0 0 0 / 7%), 0 4px 8px rgb(0 0 0 / 7%);
+		border: 0 none;
+	}
 }
 @media (max-width: 639px){
 	#main-container.is-left-sidebar-open {
