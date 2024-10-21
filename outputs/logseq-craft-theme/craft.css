@@ -2555,7 +2555,7 @@ a svg {
 
 #right-sidebar  {
 	background-color: 		var(--cl-white);
-	border-left: 			1px solid var(--cl-lilywhite);
+	border-left: 			0 none;
 	color: 					var(--cl-black);
 	font-family: 			-apple-system, BlinkMacSystemFont, sans-serif;
 }
